@@ -31,7 +31,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-PRICES_DATE = "21/11/2026"
+PRICES_DATE = "23/11/2026"   # date de la dernière vérification sur la page publique des tarifs
 # Tarif public, en $ par million de tokens :
 # (entrée, sortie, écriture cache 5 min, écriture cache 1 h, lecture cache)
 # Source : https://platform.claude.com/docs/en/about-claude/pricing

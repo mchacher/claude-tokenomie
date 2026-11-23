@@ -41,7 +41,9 @@ Elle suit le mode clair ou sombre de votre système. Dans VS Code, ouvrez l'adre
 
 - **C'est un équivalent API, pas une facture.** Les sièges Claude Enterprise sont au forfait. Le chiffre sert de repère d'efficacité : il montre ce que coûterait le même usage via l'API.
 - **Il ne couvre que Claude Code sur ce poste.** Le chat de claude.ai et vos autres machines n'y sont pas.
-- **Les tarifs sont ceux du 21/11/2026**, tirés de la page publique d'Anthropic. Ils sont définis en tête du script (`PRICES`). Le taux 1 $ = 0,86 € est indicatif (`--eur-rate`).
+- **Les tarifs sont ceux du 23/11/2026**, relus sur la page publique d'Anthropic. Ils sont définis en tête du script (`PRICES`). Le taux 1 $ = 0,86 € est indicatif (`--eur-rate`).
+- **Ce que le calcul prend en compte :** les tokens d'entrée, de sortie, d'écriture de cache (5 min ou 1 h) et de lecture de cache, chacun à son tarif ; le palier de Haiku au-delà de 100 000 tokens ; le supplément du mode rapide et de l'inférence limitée aux États-Unis. Aucun supplément selon la longueur du contexte pour Opus, Sonnet et Fable 5.2.
+- **Ce qu'il ignore :** les recherches web facturées à la recherche (10 $ les 1 000), la remise du traitement par lots, et les modèles sans tarif connu (signalés à l'écran).
 - **Les journaux ne sont pas un format garanti par Anthropic.** Une mise à jour de Claude Code peut changer leur structure. En cas de chiffres bizarres, comparez avec `/usage` dans Claude Code.
 - **Le cache** : environ 98 % des tokens sont des relectures du contexte, facturées à 5 % du prix normal. C'est normal, et c'est ce qui rend Claude Code abordable.
 
